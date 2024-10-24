@@ -1,8 +1,15 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Yuma Sakurai <yuumin0131@outlook.jp>
+
+
 import sys
-   
-ans = 0.0
-for line in sys.stdin:
-    ans += float(line)
-     
+
+ans = 0
+for line in sys .stdin:
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
+
 print(ans)
+	 
